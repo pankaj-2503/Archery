@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.archery {
+  display: grid;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.white-outer {
+  background-color: white;
+  border: 1px solid black;
+  grid-column: 1 / 21;
+  grid-row: 1 / 21;
+}
+
+.white-inner {
+  grid-column: 2 / 20;
+  grid-row: 2 / 20;
+  border:1px solid black;
+}
+
+.black-outer {
+  background-color: black;
+  grid-column: 3 / 19;
+  grid-row: 3 / 19;
+  
+}
+
+.black-inner {
+  grid-column: 4 / 18;
+  grid-row: 4 / 18;
+  border: 1px solid white;
+}
+
+.blue-outer {
+  background-color: rgb(69, 156, 190);
+  grid-column: 5 / 17;
+  grid-row: 5 / 17;
+}
+
+.blue-inner {
+  grid-column: 6 / 16;
+  grid-row: 6 / 16;
+  border:1px solid black;
+}
+
+.red-outer {
+  background-color: rgb(194, 47, 47);
+  grid-column: 7 / 15;
+  grid-row: 7 / 15;
+}
+
+.red-inner {
+  grid-column: 8 / 14;
+  grid-row: 8 / 14;
+  border:1px solid black;
+}
+
+.gold-outer {
+  background-color: gold;
+  grid-column: 9 / 13;
+  grid-row: 9 / 13;
+}
+
+.gold-inner {
+  grid-column: 10 / 12;
+  grid-row: 10 / 12;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+
+div {
+  border-radius: 50%;
+}
+
+.cross {
+  background-color:black;
+  height: 10px;
+  position: relative;
+  width: 2px;
+  border-radius: 0;
+}
+
+.cross:after {
+  background-color: black;
+  content: "";
+  height: 2px;
+  left: -4px;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #E6EE9C;
+}
